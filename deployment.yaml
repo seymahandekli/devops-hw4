@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-hw4-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-hw4
+  template:
+    metadata:
+      labels:
+        app: devops-hw4
+    spec:
+      containers:
+        - name: springboot-gradle-container
+          image: seymahandekli/devops-hw4:latest
+          ports:
+            - containerPort: 8080
