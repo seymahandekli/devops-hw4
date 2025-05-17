@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: devops-hw4-app
+    app: devops-hw4
   ports:
     - port: 8080
       targetPort: 8080
