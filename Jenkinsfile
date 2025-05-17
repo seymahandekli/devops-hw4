@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git url: 'https://github.com/seymahandekli/devops-hw4.git', branch: 'main'
+                git url: 'https://github.com/seymahandekli/devops-hw4.git', branch: 'master'
             }
         }
 
