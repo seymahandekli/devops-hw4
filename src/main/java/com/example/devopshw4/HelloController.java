@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello from Demo Spring Boot on K8s hello sau!";
+        return "Hello from Demo Spring Boot on K8s sau!";
     }
 }
